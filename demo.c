@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "./inc/stack.h"
 
 int main()
@@ -14,6 +15,7 @@ int main()
         StackPop(stack, &data);
         printf("%d ", data);
     }
+    FreeStack(stack);
     printf("\n");
 
     return 0;

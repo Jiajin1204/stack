@@ -15,4 +15,5 @@ struct Stack *StackInit(void);
 int StackPush(struct Stack *stack, int data);
 int IsStackEmpty(struct Stack *stack);
 int StackPop(struct Stack *stack, int *data);
+int FreeStack(struct Stack *stack);
 #endif

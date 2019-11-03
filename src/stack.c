@@ -46,4 +46,12 @@ int StackPop(struct Stack *stack, int *data)
 
     return 0;
 }
+int FreeStack(struct Stack *stack)
+{
+    free(stack->head);
+    stack->head = NULL;
+    free(stack);
+    stack = NULL;
 
+    return 0;
+}
